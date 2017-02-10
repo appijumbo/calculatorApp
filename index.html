@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator v2</title>
+  <title>Calculator v1</title>
+        <meta name="description" content="This calculator was was created for the Free Code Camp course. It uses the mathsJS library so that it can be upgraded easily in future. I decided to include brackets i.e. ( ) in the basic keyboard layout. After years of teaching maths it is clear that many people get confused over the operator priority aka BODMAS (brackets, order, division, multiplication, addition, subtraction) and so this helps a little. I intended to inclue a bodmas parser to aoutomaticaly put brackets around numbers to re-enforce this, but because of time constraints I've had to put this to one side. Ideally I'd also add a grayed out close bracket as a placeholder reminder akin to Googles online caluculator.">
+        <meta name="keywords" content="free code camp,free code camp calculator,JavaScript calculator, mathsjs">
+        <meta name="author" content="Tom Ormiston">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+<!-- *********     Calculator structure    *********   -->
+  
+    <main class="calculator">
+    
+        <section id="delBut" class="displaySection"> <!--  *****  DisplaySection  -->
+           
+            <div class="row"> 
+                 
+                 <button class="displayButton butCent black_grey">&#x232b;</button>  <!--  Erase to the left  -->
+                 
+                 <output id="toBeCalculated" class="inputDisplay black"></output>
+                   
+            </div> 
+               
+                 
+            <div class="row black">  
+                 
+                 <output id="answer" class="outputDisplay black"></output>
+                  
+            </div>  
+              
+        </section> <!--  End of DisplaySection  -->       
+       
+        <p id="alternativeMenu" class="altMenu off"><span>
+            ALTERNATIVE MENU &#38; KEYS:</span><span>History, MR, MR+ MC, 1/x, other mathematical functions or other style options e.g. suitable colours for colour blind people or to help with dyscalculia could be here</span>
+        </p>
+              
+        <section id="inputSectionOne" class="inputSection"> <!--  *****  InputSection  -->
+              
+            <div class="row grey600">  <!--  ***  Row 1 *** -->
+                 
+                   <button id="key_1_1" class="button butCent cyan900"><div>AC</div></button>
+                   
+                   <button id="key_1_2" class="button butCent cyan900"><div>(</div></button>
+                   
+                   <button id="key_1_3" class="button butCent cyan900"><div>)</div></button>
+                   
+                   <button id="key_1_4" class="button butRight grey600"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 40 40"><path d="M30 12c2.3 0 4-1.7 4-4 0-2-1.7-4-4-4-2.4 0-4 1.8-4 4 0 2.3 1.6 4 3.8 4zm0 4c-2.3 0-4 1.8-4 4.2 0 2.3 1.7 4.2 4 4.2 2 0 4-1.7 4-4 0-2-1.7-3.8-4-3.8zm0 12c-2.3 0-4 1.7-4 4 0 2.2 1.7 4 4 4 2 0 4-1.8 4-4s-1.7-4-4-4z" fill="#F5F5F5"/></svg>
+                  </button> 
+                  
+            </div>   <!-- End of Row 1 -->           
+               
+                 
+                   
+                       
+            <div class="row grey600">  <!--  ***  Row 2 *** -->
+                 
+                 <button id="key_2_1" class="button butCent cyan900"><div>7</div></button>
+                   
+                 <button id="key_2_2" class="button butCent cyan900"><div>8</div></button>
+                   
+                 <button id="key_2_3" class="button butCent cyan900"><div>9</div></button>
+                   
+                 <button id="key_2_4" class="button butCent orange900"><div>÷</div></button>
+                  
+            </div>   <!-- End of Row 2 -->          
+                    
+                         
+                                   
+            <div class="row grey600">   <!--  ***  Row 3 *** -->
+                 
+                 <button id="key_3_1" class="button butCent cyan900"><div>4</div></button>
+                   
+                 <button id="key_3_2" class="button butCent cyan900"><div>5</div></button>
+                   
+                 <button id="key_3_3" class="button butCent cyan900"><div>6</div></button>
+                   
+                 <button id="key_3_4" class="button butCent orange900"><div>x</div></button>
+                  
+            </div>  <!-- End of Row 3 -->
+                                        
+                                          
+                                                                      
+            <div class="row grey600">   <!--  ***  Row 4 *** -->
+                 
+                 <button id="key_4_1" class="button butCent cyan900"><div>1</div></button>
+                   
+                 <button id="key_4_2" class="button butCent cyan900"><div>2</div></button>
+                   
+                 <button id="key_4_3" class="button butCent cyan900"><div>3</div></button>
+                   
+                 <button id="key_4_4" class="button butCent orange900"><div>-</div></button>
+                  
+            </div>  <!-- End of Row 4 -->
+                          
+                      
+                        
+            <div class="row grey600">  <!--  ***  Row 5 *** -->
+                  
+                 <button id="key_5_1" class="button butCent cyan900"><div>0</div></button>
+                   
+                 <button id="key_5_2" class="button butCent cyan900"><div>.</div></button>
+                   
+                 <button id="key_5_3" class="button butCent grey600"><div>=</div></button>
+                   
+                 <button id="key_5_4" class="button butCent orange900"><div>+</div></button>
+                  
+                  
+            </div>  <!-- End of Row 5 -->
+            
+        </section> <!--  End of InputSectionOne  -->  
+        
+        
+               
+        
+    </main>  <!-- End of Calculator  -->
+
+       
+       
+</body>
+
+
+<script src="./js/main.js"></script>
+
+
+<!--  End of Calculator structure   -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.7.0/math.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
