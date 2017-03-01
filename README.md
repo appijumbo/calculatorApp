@@ -1,5 +1,8 @@
 #Calculator App v2
-A Pen created at CodePen.io. You can find this one at http://codepen.io/tom_o/pen/LGoYyW.
+
+https://appijumbo.github.io/calculatorAppv1/
+
+This is also at CodePen.io http://codepen.io/tom_o/pen/LGoYyW.
 
 ##About Version 2: 
 This version uses the jquery 'on' eventListener to bind to the keyPress, rather than the 'o'clock' buried in the HTML. An anonymous function was used to pass the keypress parameters (row, col) to the KeyPress function
