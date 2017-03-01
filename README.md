@@ -1,4 +1,4 @@
-#Calculator App v1
+#Calculator App v2
 A Pen created at CodePen.io. You can find this one at http://codepen.io/tom_o/pen/LGoYyW.
 
 ##About Version 2: 
