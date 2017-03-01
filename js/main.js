@@ -1,3 +1,7 @@
+"use strict";
+
+
+
 
 var register, formulaeString, inputArray, equallsFlag; 
 /*  array to store sequece of keys pressed */
@@ -299,7 +303,7 @@ Decided to use jquery for compatability
 */
 
 
-$(document).ready(function() { 
+$(document).ready(function() {   //  jQuery needs to be in the .ready object
 
     
 $("#delBut").on("click", function() { keyPressed(0,0); });
@@ -324,7 +328,8 @@ $("#key_5_2").on("click", function() { keyPressed(5,2); });
 $("#key_5_3").on("click", function() { keyPressed(5,3); });
 $("#key_5_4").on("click", function() { keyPressed(5,4); });
 
-});  
+});
+
 
 
 /***********    INITIAL SETUP     ***********/

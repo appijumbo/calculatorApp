@@ -43,13 +43,15 @@ button{
 
 .inputSection{
     background-color: #757575;  /* Google Material Grey 500 #757575  */
+    justify-content: space-around;
 }
 
 
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 
@@ -105,13 +107,6 @@ button{
 }
 
 
-
-.butCent{
-    display: flex;
-    align-content: center;  /* x axis centre    */
-    justify-content: space-around; /*  y axis centre  */
-    text-align: center;
-}
 
 
 

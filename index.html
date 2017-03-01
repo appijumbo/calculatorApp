@@ -1,9 +1,20 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Calculator v2</title>
-  <title>Calculator v1</title>
+<!--
+This calculator was was created for the Free Code Camp course. It uses the mathsJS library so that it can be upgraded easily in future. I decided to include brackets i.e. ( ) in the basic keyboard layout. After years of teaching maths it is clear that many people get confused over the operator priority aka BODMAS (brackets, order, division, multiplication, addition, subtraction) and so this helps a little. I intended to inclue a bodmas parser to aoutomaticaly put brackets around numbers to re-enforce this, but because of time constraints I've had to put this to one side. 
+-->
+
+
+
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Calculator v1</title>
         <meta name="description" content="This calculator was was created for the Free Code Camp course. It uses the mathsJS library so that it can be upgraded easily in future. I decided to include brackets i.e. ( ) in the basic keyboard layout. After years of teaching maths it is clear that many people get confused over the operator priority aka BODMAS (brackets, order, division, multiplication, addition, subtraction) and so this helps a little. I intended to inclue a bodmas parser to aoutomaticaly put brackets around numbers to re-enforce this, but because of time constraints I've had to put this to one side. Ideally I'd also add a grayed out close bracket as a placeholder reminder akin to Googles online caluculator.">
         <meta name="keywords" content="free code camp,free code camp calculator,JavaScript calculator, mathsjs">
         <meta name="author" content="Tom Ormiston">
@@ -13,16 +24,13 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="./js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="./js/vendor/math.min.js"></script>
+        <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.7.0/math.min.js"></script>  -->
+    </head>
+    
 <body>
-  <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -144,10 +152,6 @@
 
 
 <!--  End of Calculator structure   -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.7.0/math.min.js'></script>
 
-    <script src="js/index.js"></script>
 
-</body>
 </html>
