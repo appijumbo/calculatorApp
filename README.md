@@ -1,7 +1,8 @@
 #Calculator App v2
 
-https://appijumbo.github.io/calculatorAppv1/
+The calculater has its own [gihub page](https://appijumbo.github.io/calculatorAppv1/)
 
+[!Calculator](./extras.calc.jpg)
 This is also at CodePen.io http://codepen.io/tom_o/pen/LGoYyW.
 
 ##About Version 2: 
