@@ -2,7 +2,7 @@
 
 The calculater has its own [gihub page](https://appijumbo.github.io/calculatorAppv1/)
 
-<img src="./extras/calc.jpg" width="400">
+<img href="https://appijumbo.github.io/calculatorAppv1/" src="./extras/calc.jpg" width="400">
 
 
 This is also at CodePen.io http://codepen.io/tom_o/pen/LGoYyW.
