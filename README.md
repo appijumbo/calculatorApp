@@ -2,10 +2,10 @@
 
 The calculater has its own [gihub page](https://appijumbo.github.io/calculatorAppv1/)
 
-<a href="https://appijumbo.github.io/calculatorAppv1/"><img src="./extras/calc.jpg" width="400"></a>
+<a href="https://appijumbo.github.io/calculatorApp/"><img src="./extras/calc.jpg" width="400"></a>
 
 
-This is also at CodePen.io http://codepen.io/tom_o/pen/LGoYyW.
+This is also at [CodePen.io](http://codepen.io/tom_o/pen/LGoYyW)
 
 ## Info:
 
